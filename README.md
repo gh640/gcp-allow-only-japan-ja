@@ -69,3 +69,4 @@ python3 gcp_allow_only_japan.py
 ## 参考
 
 - [GitHub - gh640/gcp-block-country-ja](https://github.com/gh640/gcp-block-country-ja)
+- [ipv4.fetus.jp : 国/地域別IPアドレス(IPv4アドレス)割り当て一覧](https://ipv4.fetus.jp/)
