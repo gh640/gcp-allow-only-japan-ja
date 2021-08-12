@@ -7,7 +7,8 @@ Google Cloud Platform で日本以外からのアクセスをブロックする�
 
 1. リポジトリをチェックアウト
 2. 日本の IP アドレスの一覧を用意
-3. スクリプトを実行
+3. プロジェクト名を変更
+4. スクリプトを実行
 
 ### 1. リポジトリをチェックアウト
 
@@ -48,7 +49,17 @@ head jp.txt
 1.5.0.0/16
 ```
 
-### 3. スクリプトを実行
+### 3. プロジェクト名を変更
+
+コード内のプロジェクト名の値を実際のものに変更します。
+
+該当箇所:
+
+```python
+GCP_PROJECT = '__GCP_PROJECT_NAME__'
+```
+
+### 4. スクリプトを実行
 
 スクリプトを実行します。
 
@@ -66,7 +77,10 @@ python3 gcp_allow_only_japan.py
 
 13 件ほどのルールを直列で作成するため、しばらく時間がかかります。
 
-## 参考
+## 関連リポジトリ
 
 - [GitHub - gh640/gcp-block-country-ja](https://github.com/gh640/gcp-block-country-ja)
+
+## 参考
+
 - [ipv4.fetus.jp : 国/地域別IPアドレス(IPv4アドレス)割り当て一覧](https://ipv4.fetus.jp/)
